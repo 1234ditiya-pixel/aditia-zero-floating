@@ -6,3 +6,12 @@
 !index.html
 !script.js
 !style.css
+
+# Never upload environment / secret files
+.env
+.env.*
+*.env
+*.local
+*.key
+*.pem
+secrets.json
