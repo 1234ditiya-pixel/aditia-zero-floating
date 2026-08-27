@@ -148,7 +148,7 @@ cursorGlow.style.cssText = `
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,71,87),0.06) 0%, transparent 70%);
     pointer-events: none;
     z-index: 0;
     transition: transform 0.15s ease;
@@ -267,7 +267,7 @@ document.head.appendChild(rippleStyle);
     function drawGrid() {
         const cw = canvas.offsetWidth;
         const ch = canvas.offsetHeight;
-        ctx.strokeStyle = 'rgba(0, 212, 255, 0.05)';
+        ctx.strokeStyle = 'rgba(255, 71, 87, 0.05)';
         ctx.lineWidth = 1;
 
         const cols = 20;
@@ -348,7 +348,7 @@ document.head.appendChild(rippleStyle);
 
         // Line
         ctx.beginPath();
-        ctx.strokeStyle = 'rgba(0, 212, 255, 0.6)';
+        ctx.strokeStyle = 'rgba(255, 71, 87, 0.6)';
         ctx.lineWidth = 2;
         ctx.lineJoin = 'round';
 
@@ -372,8 +372,8 @@ document.head.appendChild(rippleStyle);
 
         // Glow fill
         const gradient = ctx.createLinearGradient(0, 0, 0, ch);
-        gradient.addColorStop(0, 'rgba(0, 212, 255, 0.1)');
-        gradient.addColorStop(1, 'rgba(0, 212, 255, 0)');
+        gradient.addColorStop(0, 'rgba(255, 71, 87, 0.1)');
+        gradient.addColorStop(1, 'rgba(255, 71, 87, 0)');
 
         ctx.lineTo(cw + cw, ch);
         ctx.lineTo(-scrollOffset + cw, ch);
@@ -416,7 +416,7 @@ document.head.appendChild(rippleStyle);
         const cw = canvas.offsetWidth;
         const ch = canvas.offsetHeight;
         ctx.font = '11px Inter, sans-serif';
-        ctx.fillStyle = 'rgba(0, 212, 255, 0.4)';
+        ctx.fillStyle = 'rgba(255, 71, 87, 0.4)';
         ctx.textAlign = 'right';
 
         const basePrice = 2350 + Math.sin(t * 0.5) * 20;
@@ -428,7 +428,7 @@ document.head.appendChild(rippleStyle);
 
         // Current price line
         const priceY = ch * 0.3 + Math.sin(t) * ch * 0.15;
-        ctx.strokeStyle = 'rgba(0, 212, 255, 0.2)';
+        ctx.strokeStyle = 'rgba(255, 71, 87, 0.2)';
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 4]);
         ctx.beginPath();
@@ -439,7 +439,7 @@ document.head.appendChild(rippleStyle);
 
         // Price tag
         const currentPrice = (2420 + Math.sin(t * 0.8) * 30).toFixed(2);
-        ctx.fillStyle = 'rgba(0, 212, 255, 0.7)';
+        ctx.fillStyle = 'rgba(255, 71, 87, 0.7)';
         ctx.fillRect(cw - 80, priceY - 10, 72, 20);
         ctx.fillStyle = '#0a0e17';
         ctx.font = 'bold 11px Inter, sans-serif';

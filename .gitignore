@@ -1,0 +1,8 @@
+# Ignore everything by default
+*
+
+# Keep the website project files at repo root
+!.gitignore
+!index.html
+!script.js
+!style.css
