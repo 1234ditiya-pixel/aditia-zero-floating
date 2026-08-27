@@ -618,10 +618,10 @@ body {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 24px;
     align-items: start;
-    max-width: 900px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -1285,7 +1285,7 @@ body {
     }
 }
 
-/* Glitch shimmer on "EA SINGLE SHOT BY ADITIA" */
+/* Glitch shimmer on "EA ONE SHOT BY ADITIA" */
 .word-aditia {
     position: relative;
 }
