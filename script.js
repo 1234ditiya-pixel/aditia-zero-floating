@@ -93,11 +93,10 @@ const counterObserver = new IntersectionObserver((entries) => {
             const el = entry.target;
             const text = el.getAttribute('data-value') || el.textContent;
             if (text.includes('327')) animateValue(el, 0, 327, '%', 2000);
-            else if (text.includes('97.3')) animateValue(el, 0, 97.3, '%', 2000);
             else if (text.includes('3.85')) animateValue(el, 0, 3.85, '', 2000);
             else if (text.includes('8.2')) animateValue(el, 0, 8.2, '%', 2000);
             else if (text.includes('10K')) animateValue(el, 0, 10, 'K+', 2000);
-            else if (text === '97%') animateValue(el, 0, 97, '%', 2000);
+            else if (text === '84%' || text.includes('84')) animateValue(el, 0, 84, '%', 2000);
             counterObserver.unobserve(el);
         }
     });
@@ -494,4 +493,138 @@ document.head.appendChild(rippleStyle);
 
     heroObserver.observe(heroSection);
     animate();
+})();
+
+// ===== AUTO-GENERATED TESTIMONIALS =====
+(function () {
+    const grid = document.querySelector('.testimonials-grid');
+    if (!grid) return;
+
+    const reviews = [
+        "Profit konsisten setiap minggu, sangat recommended untuk trader sibuk.",
+        "Mulanya ragu, tapi setelah coba paket 1 minggu langsung lanjut sewa bulanan.",
+        "Sistemnya otomatis dan aman. Drawdown kecil, hasilnya nyata.",
+        "Terima beres banget, tinggal lihat profit jalan sendiri.",
+        "Sudah 3 bulan pakai, hasilnya stabil dan support sangat responsif.",
+        "Risk management-nya bagus, modal aman meski market tidak menentu.",
+        "Cocok untuk pemula yang tidak punya waktu pantau chart.",
+        "Set up cepat, langsung jalan. Hasil minggu pertama sudah memuaskan.",
+        "Monitoring tim bikin tenang, saya tidak perlu pusing mikir entry.",
+        "EA terbaik yang pernah saya coba. Win rate tinggi dan drawdown rendah.",
+        "Sewa 1 bulan paling worth it, profitnya jauh melebihi biaya sewa.",
+        "Proses sewa mudah, aktivasi instan. Terima kasih timnya!",
+        "Sudah pakai beberapa EA, ini yang paling bisa diandalkan.",
+        "Profitable dan transparan. Saya bisa pantau performa secara real time.",
+        "Dimulai dari paket 2 minggu, sekarang saya yakin lanjut bulanan.",
+        "Robot jalan sendiri 24 jam. Saya tetap bisa kerja sambil pantau sesekali.",
+        "Manajemen risiko ketat bikin hati tenang meski ada fluktuasi.",
+        "Easy setup, support ramah, hasilnya memuaskan sejak minggu pertama.",
+        "Sudah balik modal dalam sebulan. Recommended banget!",
+        "Win rate 84% itu terbukti, bukan cuma janji. Hasilnya konsisten.",
+        "Panen profit kecil tapi stabil setiap hari, luar biasa.",
+        "Saya rekomendasikan ke teman-teman, hasilnya memuaskan semua.",
+        "Trading jadi simpel, tinggal sewa dan terima beres.",
+        "Drawdown terkontrol, modal tidak pernah jebol. Aman.",
+        "Paling cocok buat yang sibuk tapi pengen cuan dari trading.",
+        "Support cepat jawab semua pertanyaan. Pengalaman sewa menyenangkan.",
+        "Hasil bulan ini lebih dari cukup buat bayar sewa dan dapet profit.",
+        "Sudah 2 bulan konsisten profit, tidak ada drama loss besar.",
+        "Instalasi dibantu penuh, langsung aktif tanpa ribet.",
+        "EA jalan stabil meski berita besar, stop loss-nya ketat.",
+        "Akun cent pun tetap profit. Bagus untuk mulai kecil.",
+        "Sewa singkat dulu buat tes, hasilnya meyakinkan untuk terus lanjut.",
+        "Benar-benar passive income. Robot bekerja, saya santai.",
+        "Round trip support dari awal sampai akhir, sangat membantu.",
+        "Profit factor tinggi, loss kecil. Kombinasi terbaik.",
+        "Sudah dari 3 EA berbeda, akhirnya berhenti di EA ONE SHOT.",
+        "Transparan dan jujur. Hasil yang ditampilkan sesuai realita.",
+        "Robot pintar, bisa adaptasi ke kondisi market yang berubah.",
+        "Cukup modal kecil, sudah bisa mulai dan lihat perkembangan.",
+        "Tidak perlu ilmu trading pun bisa profit, terima beres.",
+        "Win rate-nya nyata tinggi, saya pantau sendiri di akun.",
+        "Setiap bulan ada profit, kadang lebih, kadang stabil, selalu plus.",
+        "Rekomendasi dari teman, ternyata benar-benar works.",
+        "User terima beres sesuai janji. Bangga pakai EA ini.",
+        "Saya freelance, jadwal tak tentu, tapi profit tetap jalan.",
+        "Monitoring rutin dari tim menambah rasa aman saya.",
+        "Sudah perpanjang berkali-kali, kualitas selalu konsisten.",
+        "Hasil kecil tapi konsisten lebih baik dari grafik naik turun ekstrem.",
+        "Dari pemula yang takut loss, sekarang nyaman berkat manajemen risikonya.",
+        "Cukup sewa, biar mesin yang kerja. Hasilnya memuaskan.",
+    ];
+
+    const names = [
+        "Aditya P.", "Bunga S.", "Candra W.", "Dian K.", "Eko B.",
+        "Fitri Y.", "Galih R.", "Hendra T.", "Indah M.", "Joko S.",
+        "Kiki L.", "Lukman N.", "Maya R.", "Naufal F.", "Oscar D.",
+        "Putri D.", "Rahmat H.", "Sari W.", "Taufik A.", "Umar H.",
+        "Vina L.", "Wahyu N.", "Yoga P.", "Zaki R.", "Agus W.",
+        "Bella R.", "Citra S.", "Dendi K.", "Eka P.", "Fajar R.",
+        "Gita M.", "Haris B.", "Intan S.", "Jefri T.", "Kartika L.",
+        "Lia N.", "Miko P.", "Nadia R.", "Oki W.", "Paula S.",
+        "Rina D.", "Sandi B.", "Tri W.", "Uli K.", "Vega H.",
+        "Wulan P.", "Yunus S.", "Zahra R.", "Bagus P.", "Cici M.",
+    ];
+
+    const cities = [
+        "Jakarta", "Surabaya", "Bandung", "Medan", "Semarang",
+        "Makassar", "Palembang", "Denpasar", "Bogor", "Malang",
+        "Tangerang", "Depok", "Bekasi", "Yogyakarta", "Solo",
+        "Batam", "Pekanbaru", "Banjarmasin", "Balikpapan", "Pontianak",
+        "Manado", "Padang", "Samarinda", "Tasikmalaya", "Cirebon",
+        "Jember", "Kediri", "Sukabumi", "Cilacap", "Purwokerto",
+    ];
+
+    function initials(name) {
+        return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+    }
+
+    function randomStars() {
+        const r = Math.random();
+        let count;
+        if (r < 0.6) count = 5;
+        else if (r < 0.85) count = 4;
+        else count = 3;
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+            if (i < count) {
+                stars += '<i class="fas fa-star" style="color:#fbbf24"></i>';
+            } else {
+                stars += '<i class="fas fa-star" style="color:#ffffff;opacity:0.3"></i>';
+            }
+        }
+        return `<div class="stars">${stars}</div>`;
+    }
+
+    function cardHTML(review, i) {
+        const name = names[i % names.length];
+        const city = cities[i % cities.length];
+        return `
+            <div class="testimonial-card reveal">
+                ${randomStars()}
+                <p>"${review}"</p>
+                <div class="testimonial-author">
+                    <div class="avatar">${initials(name)}</div>
+                    <div>
+                        <strong>${name}</strong>
+                        <span>${city}</span>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    const injectAt = grid.querySelector('.testimonial-card:nth-child(6)');
+    reviews.forEach((review, i) => {
+        if (injectAt) {
+            injectAt.insertAdjacentHTML('afterend', cardHTML(review, i));
+        } else {
+            grid.insertAdjacentHTML('beforeend', cardHTML(review, i));
+        }
+    });
+
+    grid.querySelectorAll('.testimonial-card.reveal').forEach(card => {
+        if (!card.classList.contains('active')) {
+            revealObserver.observe(card);
+        }
+    });
 })();

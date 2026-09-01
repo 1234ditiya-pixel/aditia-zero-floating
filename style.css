@@ -618,10 +618,10 @@ body {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     align-items: start;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -1109,7 +1109,7 @@ body {
 
     .pricing-grid {
         grid-template-columns: 1fr;
-        max-width: 450px;
+        max-width: 400px;
         margin: 0 auto;
     }
 
@@ -1219,6 +1219,7 @@ body {
 
     .pricing-grid {
         max-width: 100%;
+        grid-template-columns: 1fr;
     }
 }
 
